@@ -1,0 +1,28 @@
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisyUi & tailwind  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Countries</title>
+    <!-- css  -->
+    <style>
+        body {
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/649/274/476/countries-flag-map-world-map-wallpaper-thumb.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex flex-col justify-center items-center p-10 backdrop-blur-sm h-full">
+        <p class="md:text-5xl text-4xl text-white font-bold">Want to know about countries?</p>
+        <p class="text-white md:text-3xl p-7">Don't worry. We got you. Search search by the name of the country you want to know about and learn new things about that country with us.</p>
+        <input type="search" id="searchInput" placeholder="Search Here" class="rounded-lg p-3 w-full md:w-3/12 outline-none focus:ring-4 focus:ring-blue-900">
+        <input type="submit" value="Search" id="searchButton" class="btn m-3 bg-blue-950 text-white hover:text-blue-950 border-0 px-10">
+    </div>
+    <div class="grid place-items-center" id="searchResults"></div>
+    <script src="index.js"></script>
+</body>
+</html>
