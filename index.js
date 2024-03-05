@@ -77,14 +77,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 const countryDetailsDiv = document.createElement('div');
                 countryDetailsDiv.classList.add('country-details');
                 countryDetailsDiv.innerHTML = `
-                    <h2 class="text-3xl p-2">${countryDetails.name.official}</h2>
-                    <p class="text-xl p-1">Capital: ${countryDetails.capital}</p>
-                    <p class="text-xl p-1">Population: ${countryDetails.population}</p>
-                    <p class="text-xl p-1">Status: ${countryDetails.status}</p>
-                    <p class="text-xl p-1">Independent: ${countryDetails.independent}</p>
-                    <p class="text-xl p-1">Region: ${countryDetails.region}</p>
-                    <p class="text-xl p-1">Area: ${countryDetails.area}</p>
-                    <p class="text-xl p-1">Continents: ${countryDetails.continents}</p>
+                    <h2 class="text-4xl font-bold p-2">${countryDetails.name.official}</h2>
+                    <p class="text-xl p-1"><b>Capital:</b> ${countryDetails.capital}</p>
+                    <p class="text-xl p-1"><b>Population:</b> ${countryDetails.population}</p>
+                    <p class="text-xl p-1"><b>Status:</b> ${countryDetails.status}</p>
+                    <p class="text-xl p-1"><b>Independent:</b> ${countryDetails.independent}</p>
+                    <p class="text-xl p-1"><b>Region:</b> ${countryDetails.region}</p>
+                    <p class="text-xl p-1"><b>Area:</b> ${countryDetails.area} sq.km.</p>
+                    <p class="text-xl p-1"><b>Continents:</b> ${countryDetails.continents}</p>
                     <img src="${countryDetails.flags.png}" class="w-full p-4" alt="">
                 `;
 
